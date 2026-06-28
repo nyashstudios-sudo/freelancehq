@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - FreelanceHQ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-8 rounded-3xl shadow-xl w-full max-w-md">
+    <h2 class="text-3xl font-bold text-center mb-8">Welcome Back</h2>
+    <form id="loginForm">
+      <input id="email" type="email" placeholder="Email" class="w-full p-4 border rounded-2xl mb-4">
+      <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-2xl font-semibold">Log In</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      // Demo login
+      window.location.href = '/dashboard';
+    });
+  </script>
+</body>
+</html>
