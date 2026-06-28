@@ -10,6 +10,6 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/', (req, res) => res.render('index'));
 app.get('/login', (req, res) => res.render('login'));
-app.get('/dashboard', (req, res) => res.render('dashboard'));
+app.get('/dashboard', (req, res) => res.render('dashboard', { user: { name: 'John Smith' } }));
 
 module.exports = app;
