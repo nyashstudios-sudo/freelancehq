@@ -1,0 +1,7 @@
+// FreelanceHQ Client-Side Logic
+console.log('FreelanceHQ Loaded');
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Add interactivity here (bids, messages, etc.)
+  console.log('Dashboard ready');
+});
